@@ -1,5 +1,5 @@
 {
-  "name": "api-rest",
+  "name": "simpleapirest",
   "version": "1.0.0",
   "description": "API RESTful en NodeJS",
   "main": "index.js",
@@ -15,5 +15,13 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garduino/SimpleAPIREST.git"
+  },
+  "bugs": {
+    "url": "https://github.com/garduino/SimpleAPIREST/issues"
+  },
+  "homepage": "https://github.com/garduino/SimpleAPIREST#readme"
 }
