@@ -1,28 +1,25 @@
 {
-  "name": "simpleapirest",
+  "name": "api-rest",
   "version": "1.0.0",
-  "description": "API RESTful en NodeJS",
+  "description": "Proyecto de API RESTful con Node.js y Express",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Germán S. Arduino",
+  "author": "Carlos Azaustre (http://carlosazaustre.es)",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "mongoose": "^5.3.3"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "crypto": "0.0.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "jwt-simple": "^0.5.5",
+    "moment": "^2.22.2",
+    "mongoose": "^4.13.17"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/garduino/SimpleAPIREST.git"
-  },
-  "bugs": {
-    "url": "https://github.com/garduino/SimpleAPIREST/issues"
-  },
-  "homepage": "https://github.com/garduino/SimpleAPIREST#readme"
+    "nodemon": "^1.10.2"
+  }
 }
