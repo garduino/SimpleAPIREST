@@ -7,6 +7,8 @@ function signUp (req, res) {
   const user = new User({
     email: req.body.email,
     displayName: req.body.displayName,
+    // ver porque primero dice que no tiene que estar y después está....
+    // además no está encriptando nada....
     password: req.body.password
   })
 
