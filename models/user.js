@@ -14,7 +14,11 @@ const UserSchema = new Schema({
   lastLogin: Date
 })
 
-UserSchema.pre('save', (next) => {
+// Para que pase por acá y hashee la contraseña, encontré el siguiente artículo en stackoverflow
+// https://stackoverflow.com/questions/37365038/this-is-undefined-in-a-mongoose-pre-save-hook#
+// donde explican sacar la flecha y usar function antes de next.
+// A partir de este cambio empezó a hashear la contraseña!
+UserSchema.pre('save', function (next){
   let user = this
   //if (!user.isModified('password')) return next()
 
